@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf1dafd5-0be3-4913-b8d1-da20d9b471ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
     </list>
     <ignored path=".idea/abrod.iml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,7 +148,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -231,6 +234,7 @@
         <option value="$PROJECT_DIR$/asset/css/style2.css" />
         <option value="$PROJECT_DIR$/single.html" />
         <option value="$PROJECT_DIR$/asset/css/style.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -240,7 +244,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="140" />
     <option name="y" value="208" />
     <option name="width" value="856" />
@@ -258,17 +262,6 @@
             <path>
               <item name="abrod" type="b2602c69:ProjectViewProjectNode" />
               <item name="abrod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abrod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abrod" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abrod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abrod" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,16 +322,15 @@
       <workItem from="1559580215735" duration="9482000" />
       <workItem from="1559748193962" duration="509000" />
       <workItem from="1559754277515" duration="2782000" />
-      <workItem from="1559907497644" duration="18466000" />
+      <workItem from="1559907497644" duration="19175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179645000" />
+    <option name="totallyTimeSpent" value="180354000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.17776097" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.09455371" />
@@ -541,7 +533,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
