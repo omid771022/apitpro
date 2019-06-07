@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href="asset/css/style2.css" type="text/css">
+
+	<style>	
+	div:nth-child(1) {
+  background: rgb(122, 206, 122);
+  height: 140px;
+  transform: skew(-10deg) rotate(2deg);
+  -webkit-transform: skew(-10deg) rotate(2deg);
+  -moz-transform: skew(-10deg) rotate(2deg);
+}
+
+div:nth-child(1) p {
+  transform: skew(10deg) rotate(-2deg);
+  -webkit-transform: skew(10deg) rotate(-2deg);
+  -moz-transform: skew(10deg) rotate(-2deg);
+  padding: 3% 2%;
+}
+
+div:nth-child(2) {
+  border-bottom: 180px solid rgb(233, 233, 65);
+  border-left: 8px solid transparent;
+  border-right: 14px solid transparent;
+  height: 0;
+  margin-top: 60px;
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+}
+
+div:nth-child(2) p {
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  padding: 3.5% 3%;
+}
+
+div:nth-child(3) {
+  border-top: 140px solid rgb(253, 74, 74);
+  border-left: 23px solid transparent;
+  border-right: 14px solid transparent;
+  height: 0;
+  margin-top: 20px;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+div:nth-child(3) p {
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  position: absolute;
+  top: -140px;
+  padding: 3% 3%;
+}
+
+
+	</style>
+	
+	
+	</head>
+<body>
+
+
+<div>
+  <p>text..</p>
+</div>
+
+<div>
+  <p>text..</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            568: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    $(document).ready(function() {
+        $('.popup-youtube, .popup-text').magnificPopup({
+            disableOn: 320,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: true
+        });
+    });
+    $(document).ready(function() {
+        $('.popup-text').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+            callbacks: {
+                beforeOpen: function() {
+                    if ($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#name';
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
