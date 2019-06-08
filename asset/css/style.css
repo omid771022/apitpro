@@ -631,6 +631,9 @@ span > img {
 /* start responsive*/
 
 @media screen and (max-width: 360px) and (min-width: 0px) {
+    .txet-comments-abut{
+        margin-bottom: 10px;
+    }
 
     .carousel-caption > p {
 
@@ -653,7 +656,11 @@ span > img {
     }
 }
 
-@media screen and (max-width: 411px) and (min-width: 360px) {
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .txet-comments-abut{
+        margin-bottom: 10px;
+    }
+
 
     .carousel-caption > p {
 
@@ -673,6 +680,7 @@ span > img {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+
 
     span > img {
         margin-top: 35px;
@@ -1380,4 +1388,63 @@ font-size: 13px;
     color: #FFFFFF;
     transform: translate3d(0, -2px, 0);
     box-shadow: #1F9654 0 10px 20px 0;
+}
+section>h3{
+    direction: rtl;
+    text-align: right;
+    padding: 40px 50px;
+}
+.comment-part{
+    text-align: right;
+    direction: rtl;
+}
+.margin-post{
+    margin: 20px 0;
+}
+.catgory-pagination{
+ display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.map>iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    border: none;
+
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    direction: rtl;
+}
+
+
+.form-control{
+    background-color:#f7f7f7;
+}
+.txet-comments-abut>h3{
+    text-align: center;
+    direction: rtl;
+
+
+
+}
+.txet-comments-abut{
+ border-radius: 10px;
+    background-color: #3F6197;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.txet-comments-abut>p{
+    font-size: 18px;
+    direction: rtl;
+    text-align: center;
+}
+.phone{
+    text-align:center;
+    direction: rtl;
+
 }

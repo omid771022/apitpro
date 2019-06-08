@@ -58,6 +58,16 @@ $(document).ready(function() {
 });
 
 
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(35.748808,51.333896),
+        zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+
 AOS.init();
 
 
@@ -354,3 +364,30 @@ AOS.init();
 
 
 
+
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+    });
+
+    var drawingManager = new google.maps.drawing.DrawingManager({
+        drawingMode: google.maps.drawing.OverlayType.MARKER,
+        drawingControl: true,
+        drawingControlOptions: {
+            position: google.maps.ControlPosition.TOP_CENTER,
+            drawingModes: ['marker', 'circle', 'polygon', 'polyline', 'rectangle']
+        },
+        markerOptions: {icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'},
+        circleOptions: {
+            fillColor: '#ffff00',
+            fillOpacity: 1,
+            strokeWeight: 5,
+            clickable: false,
+            editable: true,
+            zIndex: 1
+        }
+    });
+    drawingManager.setMap(map);
+}
